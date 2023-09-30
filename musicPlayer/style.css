@@ -151,4 +151,12 @@ main {
     #play:hover {
         width: 9vw;
     }
+
+    #duration {
+        top: 2.7vw;
+    }
+    
+    #timeNow {
+        top: 2.7vw;
+    }
 }

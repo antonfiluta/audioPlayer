@@ -15,7 +15,7 @@ music.currentTime = 0;
 
 setTimeout(() => {
         r.max = music.duration;
-        dur.innerHTML = formatTime(music.duration);
+        dur.innerHTML = array[index].duration;
     }, 300);
 
 setInterval(() => {
@@ -57,12 +57,12 @@ function next(n) {
         img.src = array[index].image;
         songNames.innerText = array[index].songN;
         songAs.innerText = array[index].songAth;
+        dur.innerHTML = array[index].duration;
         setTimeout(() => {
         r.max = music.duration;
         if (!isPlay) {
             music.play();
          }
-         dur.innerHTML = formatTime(music.duration);
         }, 200);
     } else if (index === 0 && n < 0) {
         index = array.length - 1;
@@ -71,12 +71,12 @@ function next(n) {
         img.src = array[index].image;
         songNames.innerText = array[index].songN;
         songAs.innerText = array[index].songAth;
+        dur.innerHTML = array[index].duration;
         setTimeout(() => {
             r.max = music.duration;
             if (!isPlay) {
                 music.play();
              }
-             dur.innerHTML = formatTime(music.duration);
             }, 200);
     } else {
         index = index + n;
@@ -85,12 +85,12 @@ function next(n) {
         img.src = array[index].image;
         songNames.innerText = array[index].songN;
         songAs.innerText = array[index].songAth;
+        dur.innerHTML = array[index].duration;
         setTimeout(() => {
             r.max = music.duration;
             if (!isPlay) {
                 music.play();
              }
-             dur.innerHTML = formatTime(music.duration);
             }, 200);
     }
 }
@@ -99,35 +99,40 @@ const song1 = {
     link: 'audio/vampire.mp3',
     image: 'img/vampire.jpg',
     songN: 'Vampire',
-    songAth: 're6ce'
+    songAth: 're6ce',
+    duration: "02:33"
 }
 
 const song2 = {
     link: 'audio/ne_govori_mne.mp3',
     image: 'img/govori.jpeg',
     songN: 'Не говори мне',
-    songAth: 'cold carti'
+    songAth: 'cold carti',
+    duration: '01:31'
 }
 
 const song3 = {
     link: 'audio/ya_sokhranyu.mp3',
     image: 'img/save.jpg',
     songN: 'Я сохраню',
-    songAth: 'cold carti'
+    songAth: 'cold carti',
+    duration: '02:08'
 }
 
 const song4 = {
     link: 'audio/skoro.mp3',
     image: 'img/skoro.jpg',
     songN: 'Скоро',
-    songAth: 'cold carti'
+    songAth: 'cold carti',
+    duration: '02:38'
 }
 
 const song5 = {
     link: 'audio/dobroe_utro.mp3',
     image: 'img/utro.jpg',
     songN: 'Доброе утро',
-    songAth: 'cold carti'
+    songAth: 'cold carti',
+    duration: '02:24'
 }
 
 const array = [song1, song2, song3, song4, song5];
