@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="anime.css">
+    <title>Document</title>
+</head>
+<body id="body">
+    <main>
+        <img src="img/vampire.jpg" alt="song" id="songImg">
+        <p id="songName">Vampire</p>
+        <p id="songA">re6ce</p>
+        <div class="rangeBox">
+          <input type="range" name="timeLine" id="range" value="0">
+          <div id="timeNow">00:00</div>
+          <div id="duration">00:00</div>
+        </div>
+        <div class="menu">
+            <img src="svg/backward_1.svg" alt="back" onclick="next(-1)" class="move" id="back">
+            <img src="svg/play.svg" alt="play" onclick="play()" id="play">
+            <img src="svg/forward_1.svg" alt="next" onclick="next(1)" class="move" id="next">
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
