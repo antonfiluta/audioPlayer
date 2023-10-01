@@ -10,7 +10,7 @@ let isPlay = true;
 let index = 0;
 
 let music = new Audio();
-music.src = 'audio/vampire.mp3';
+music.src = 'audio/rizza.mp3';
 music.currentTime = 0;
 
 setTimeout(() => {
@@ -96,44 +96,46 @@ function next(n) {
 }
 
 const song1 = {
-    link: 'audio/vampire.mp3',
-    image: 'img/vampire.jpg',
-    songN: 'Vampire',
-    songAth: 're6ce',
-    duration: "02:33"
+    link: 'audio/rizza.mp3',
+    image: 'img/rizza.jpeg',
+    songN: 'связь',
+    songAth: 'LXNER, rizza',
+    duration: "02:19"
 }
 
 const song2 = {
-    link: 'audio/ne_govori_mne.mp3',
-    image: 'img/govori.jpeg',
-    songN: 'Не говори мне',
-    songAth: 'cold carti',
-    duration: '01:31'
-}
-
-const song3 = {
-    link: 'audio/ya_sokhranyu.mp3',
-    image: 'img/save.jpg',
-    songN: 'Я сохраню',
-    songAth: 'cold carti',
-    duration: '02:08'
-}
-
-const song4 = {
-    link: 'audio/skoro.mp3',
-    image: 'img/skoro.jpg',
-    songN: 'Скоро',
-    songAth: 'cold carti',
-    duration: '02:38'
-}
-
-const song5 = {
     link: 'audio/dobroe_utro.mp3',
     image: 'img/utro.jpg',
     songN: 'Доброе утро',
     songAth: 'cold carti',
     duration: '02:24'
 }
+
+const song3 = {
+    link: 'audio/winter.mp3',
+    image: 'img/winter.jpeg',
+    songN: 'зима',
+    songAth: 'ooes',
+    duration: '02:28'
+}
+
+const song4 = {
+    link: 'audio/govoril.mp3',
+    image: 'img/govoril.png',
+    songN: 'Я же говорил',
+    songAth: 'Sqwore, 17 SEVENTEEN',
+    duration: '02:33'
+}
+
+const song5 = {
+    link: 'audio/friend.mp3',
+    image: 'img/friend.png',
+    songN: 'Цифровые друзья',
+    songAth: 'хочуспать',
+    duration: '02:00'
+}
+
+
 
 const array = [song1, song2, song3, song4, song5];
 
