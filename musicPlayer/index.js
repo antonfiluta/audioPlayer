@@ -31,7 +31,7 @@ setInterval(() => {
         playImg.src = 'svg/pause.svg';
         isPlay = false;
     }
-}, 100);
+}, 160);
 
 function play() {
     if (isPlay) {
@@ -63,7 +63,7 @@ function next(n) {
         if (isPlay) {
             music.play();
          }
-        }, 200);
+        }, 150);
     } else if (index === 0 && n < 0) {
         index = array.length - 1;
         music.src = array[index].link;
@@ -77,7 +77,7 @@ function next(n) {
             if (isPlay) {
                 music.play();
              }
-            }, 200);
+            }, 150);
     } else {
         index = index + n;
         music.src = array[index].link;
@@ -87,11 +87,11 @@ function next(n) {
         songAs.innerText = array[index].songAth;
         dur.innerHTML = array[index].duration;
         setTimeout(() => {
-            r.max = music.duration;
+            r.max = music.duration; 
             if (isPlay) {
                 music.play();
              }
-            }, 200);
+            }, 150);
     }
 }
 
