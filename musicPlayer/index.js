@@ -60,7 +60,7 @@ function next(n) {
         dur.innerHTML = array[index].duration;
         setTimeout(() => {
         r.max = music.duration;
-        if (!isPlay) {
+        if (isPlay) {
             music.play();
          }
         }, 200);
@@ -74,7 +74,7 @@ function next(n) {
         dur.innerHTML = array[index].duration;
         setTimeout(() => {
             r.max = music.duration;
-            if (!isPlay) {
+            if (isPlay) {
                 music.play();
              }
             }, 200);
@@ -88,7 +88,7 @@ function next(n) {
         dur.innerHTML = array[index].duration;
         setTimeout(() => {
             r.max = music.duration;
-            if (!isPlay) {
+            if (isPlay) {
                 music.play();
              }
             }, 200);
