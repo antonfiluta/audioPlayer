@@ -31,7 +31,7 @@ setInterval(() => {
         playImg.src = 'svg/pause.svg';
         isPlay = false;
     }
-}, 160);
+}, 200);
 
 function play() {
     if (isPlay) {
@@ -54,44 +54,44 @@ function next(n) {
         index = 0;
         music.src = array[index].link;
         music.currentTime = 0;
-        img.src = array[index].image;
-        songNames.innerText = array[index].songN;
-        songAs.innerText = array[index].songAth;
-        dur.innerHTML = array[index].duration;
-        setTimeout(() => {
-        r.max = music.duration;
-        if (isPlay) {
-            music.play();
-         }
-        }, 150);
-    } else if (index === 0 && n < 0) {
-        index = array.length - 1;
-        music.src = array[index].link;
-        music.currentTime = 0;
-        img.src = array[index].image;
-        songNames.innerText = array[index].songN;
-        songAs.innerText = array[index].songAth;
-        dur.innerHTML = array[index].duration;
         setTimeout(() => {
             r.max = music.duration;
             if (isPlay) {
                 music.play();
              }
             }, 150);
-    } else {
-        index = index + n;
-        music.src = array[index].link;
-        music.currentTime = 0;
         img.src = array[index].image;
         songNames.innerText = array[index].songN;
         songAs.innerText = array[index].songAth;
         dur.innerHTML = array[index].duration;
+    } else if (index === 0 && n < 0) {
+        index = array.length - 1;
+        music.src = array[index].link;
+        music.currentTime = 0;
         setTimeout(() => {
-            r.max = music.duration; 
+            r.max = music.duration;
             if (isPlay) {
                 music.play();
              }
             }, 150);
+        img.src = array[index].image;
+        songNames.innerText = array[index].songN;
+        songAs.innerText = array[index].songAth;
+        dur.innerHTML = array[index].duration;
+    } else {
+        index = index + n;
+        music.src = array[index].link;
+        music.currentTime = 0;
+        setTimeout(() => {
+            r.max = music.duration;
+            if (isPlay) {
+                music.play();
+             }
+            }, 150);
+        img.src = array[index].image;
+        songNames.innerText = array[index].songN;
+        songAs.innerText = array[index].songAth;
+        dur.innerHTML = array[index].duration;
     }
 }
 
